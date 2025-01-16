@@ -2,9 +2,27 @@
 
 ## Sobre
 
-Analisar a variação do preço das camisas de alguns dos principais clubes brasileiros e correlacionar 
-com indicadores sociais e econômicos do país. Foram coletados dados das principais 
-equipes do futebol brasileiro entre os anos de 2012 e 2024.
+
+
+
+A análise está focada na versão "Torcedor"/Masculina/Adulta das camisetas oficiais das equipes.
+Este modelo é o mais próximo da versão final, porém utiliza um material 
+um pouco mais simples que o final. Versões femininas e infantis costumam ser mais baratas 
+que a versão torcedor masculina. 
+Além disso, esta análise não leva em conta a eventual adição de números ou patches nas camisas.
+
+Infelizmente, não possível achar os valores apenas para a versão número 1 dos uniformes,
+sendo assim, algumas versões contam com valores das camisetas número 2 ou 3 
+lançadas pelos clubes no ano.
+
+Em todos os valores, é possível encontrar a sua fonte de referência. 
+Para demarcar o valor real de época, foi optado por buscar notícias 
+do ano corrente do lançamento, afim de garantir sua real veracidade. 
+Também foi tentado colocar os valores de lançamento das camisetas, no entanto, 
+nem sempre foram encontradas notícias contendo o preço. 
+
+Caso algum valor esteja incorreto, fique à vontade para abrir um PR 
+e contribuir com o projeto.
 
 ## Dados Brutos
 
