@@ -2,9 +2,6 @@
 
 ## Sobre
 
-
-
-
 A análise está focada na versão "Torcedor"/Masculina/Adulta das camisetas oficiais das equipes.
 Este modelo é o mais próximo da versão final, porém utiliza um material 
 um pouco mais simples que o final. Versões femininas e infantis costumam ser mais baratas 
