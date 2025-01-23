@@ -11,10 +11,7 @@ items = soup.find_all("tr", class_="dxgvDataRow")
 
 l_sal = []
 
-out_file = open('salario_minimo_historico.csv', 'w')
-writer = csv.writer(out_file, quoting=csv.QUOTE_MINIMAL)
-
-writer.writerow(["ano", "mes", "valor"])
+y_dict = dict()
 
 for item in items:
     td = item.find_all("td")
@@ -25,11 +22,24 @@ for item in items:
         year = int(date_sal[0])
         
         # Grab only for 2013 and following
-        if year < 2013:
+        if year < 2012:
             continue
         
         value_sal = td[1].text.replace(".", "").replace(",", ".")
         
-        writer.writerow([year, int(date_sal[1]), float(value_sal)])
+        if year in y_dict.keys():
+            if value_sal > y_dict[year]:
+                y_dict[year] = value_sal
+        else:
+            y_dict[year] = value_sal
+
+
+out_file = open('salario_minimo_historico.csv', 'w')
+writer = csv.writer(out_file, quoting=csv.QUOTE_MINIMAL)
+
+writer.writerow(["year", "value"])
+
+for k, v in y_dict.items():
+    writer.writerow([k, float(v)])
 
 out_file.close()
