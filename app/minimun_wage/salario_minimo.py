@@ -21,7 +21,7 @@ for item in items:
         
         year = int(date_sal[0])
         
-        # Grab only for 2013 and following
+        # Grab only for 2012 and following
         if year < 2012:
             continue
         

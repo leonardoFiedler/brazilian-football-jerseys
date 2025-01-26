@@ -1,12 +1,20 @@
 # Brazil teams Jersey Price
 
-## Sobre
+## Objetivo
 
-A análise está focada na versão "Torcedor"/Masculina/Adulta das camisetas oficiais das equipes.
+O objetivo deste repositório é compartilhar dados públicos sobre
+a evolução dos preços das camisas dos clubes brasileiros.
+A ideia é coletar informações de preço dos principais clubes do Brasil
+e avaliar a sua evolução contranstado com outros aspectos, como salário
+mínimo, momento da equipe, dentre outros indicadores sociais e econômicos.
+
+A análise está focada na versão "Torcedor"/Masculina/Adulta 
+das camisetas oficiais das equipes.
 Este modelo é o mais próximo da versão final, porém utiliza um material 
-um pouco mais simples que o final. Versões femininas e infantis costumam ser mais baratas 
-que a versão torcedor masculina. 
-Além disso, esta análise não leva em conta a eventual adição de números ou patches nas camisas.
+um pouco mais simples que o final. Versões femininas e infantis costumam 
+ser mais baratas que a versão torcedor masculina. 
+Além disso, esta análise não leva em conta a eventual adição de números 
+ou patches nas camisas.
 
 Infelizmente, não possível achar os valores apenas para a versão número 1 dos uniformes,
 sendo assim, algumas versões contam com valores das camisetas número 2 ou 3 
@@ -23,7 +31,42 @@ e contribuir com o projeto.
 
 ## Dados Brutos
 
-Acesse o csv com dados coletados [clicando aqui](./raw/data.csv)
+Acesse o csv com dados coletados [clicando aqui](./raw/data.csv).
+
+## Dados Disponíveis
+
+Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
+9 clubes possuem apenas um único registro.
+
+### Completo
+
+* Flamengo
+* Vasco
+* Corinthians
+* Palmeiras
+
+### Parcial
+
+* Botafogo
+* Fluminense
+* Grêmio
+* Internacional
+* Atlético-MG
+* Cruzeiro
+* São Paulo
+* Santos
+
+### Apenas uma registro
+
+* Athletico-PR
+* Sport
+* Bragantino
+* Fortaleza
+* Coritiba
+* Ceará
+* Bahia
+* Goiás
+* Atlético-GO
 
 ## Metadata
 
