@@ -1,33 +1,27 @@
-# Brazil teams Jersey Price
+# Brazil Teams Jersey Price
 
 ## Objetivo
 
-O objetivo deste repositório é compartilhar dados públicos sobre
-a evolução dos preços das camisas dos clubes brasileiros.
-A ideia é coletar informações de preço dos principais clubes do Brasil
-e avaliar a sua evolução contranstado com outros aspectos, como salário
-mínimo, momento da equipe, dentre outros indicadores sociais e econômicos.
+O objetivo deste repositório é compartilhar dados públicos sobre a evolução dos preços das 
+camisas dos clubes brasileiros. A ideia é coletar informações sobre os preços das camisas 
+dos principais times do Brasil e analisar sua evolução, contrastando-a com outros aspectos, 
+como o salário mínimo, o momento da equipe e outros indicadores sociais e econômicos.
 
-A análise está focada na versão "Torcedor"/Masculina/Adulta 
-das camisetas oficiais das equipes.
-Este modelo é o mais próximo da versão final, porém utiliza um material 
-um pouco mais simples que o final. Versões femininas e infantis costumam 
-ser mais baratas que a versão torcedor masculina. 
-Além disso, esta análise não leva em conta a eventual adição de números 
-ou patches nas camisas.
+A análise está focada na versão "Torcedor"/Masculina/Adulta das camisetas oficiais das equipes. 
+Este modelo é o mais próximo da versão usada em campo, porém utiliza um material um pouco mais 
+simples que o das camisas dos jogadores. Versões femininas e infantis costumam ser mais baratas 
+que a versão torcedor masculina. Além disso, esta análise não leva em conta a eventual adição 
+de números ou patches nas camisas.
 
-Infelizmente, não possível achar os valores apenas para a versão número 1 dos uniformes,
-sendo assim, algumas versões contam com valores das camisetas número 2 ou 3 
-lançadas pelos clubes no ano.
+Infelizmente, não foi possível encontrar os valores apenas para a versão número 1 dos uniformes. 
+Sendo assim, em alguns casos, os valores correspondem às camisetas número 2 ou 3 lançadas pelos clubes no ano.
 
-Em todos os valores, é possível encontrar a sua fonte de referência. 
-Para demarcar o valor real de época, foi optado por buscar notícias 
-do ano corrente do lançamento, afim de garantir sua real veracidade. 
-Também foi tentado colocar os valores de lançamento das camisetas, no entanto, 
-nem sempre foram encontradas notícias contendo o preço. 
+Todos os valores apresentados possuem uma fonte de referência. Para garantir a precisão dos 
+valores de época, optou-se por buscar notícias do ano de lançamento das camisas. Também 
+foi priorizado o uso dos valores de lançamento das camisetas, mas nem sempre foi possível 
+encontrar notícias contendo esses preços.
 
-Caso algum valor esteja incorreto, fique à vontade para abrir um PR 
-e contribuir com o projeto.
+Caso algum valor esteja incorreto, fique à vontade para abrir um PR e contribuir com o projeto.
 
 ## Dados Brutos
 

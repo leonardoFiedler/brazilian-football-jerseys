@@ -1,10 +1,13 @@
-.PHONY: create_venv upgrade_libs analytics clean
+.PHONY: create_venv upgrade_libs format analytics clean
 
 create_venv:
 	@uv venv
 
 upgrade_libs:
 	@uv sync --upgrade
+
+format:
+	@ruff format
 
 analytics: ## Start analytics
 	msgfmt -o app/analytics/locales/en/LC_MESSAGES/messages.mo app/analytics/locales/en/LC_MESSAGES/messages && \
