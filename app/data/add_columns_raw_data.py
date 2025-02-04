@@ -68,6 +68,7 @@ def create_column_sub_percent_value(
 if __name__ == "__main__":
     INPUT_FILE = "data/raw/brazil-teams-jersey-price.csv"
     INPUT_MIN_WAGE_FILE = "data/processed/minimum_wage_historical.csv"
+    INPUT_IPCA_FILE = "data/raw/IPCA.csv"
     OUTPUT_FILE = "data/processed/brazil-teams-jersey-price-processed.csv"
 
     df_teams = pd.read_csv(INPUT_FILE)
@@ -85,17 +86,27 @@ if __name__ == "__main__":
     df_teams = create_column_sub_percent_value(df_teams, "value", 10, "value_sub_10")
     df_teams = create_column_sub_percent_value(df_teams, "value", 15, "value_sub_15")
 
+    # Wage fields
     df_wage = pd.read_csv(INPUT_MIN_WAGE_FILE)
 
-    df_result = pd.merge(df_teams, df_wage, on="year", how="inner")
+    df_teams_wage = pd.merge(df_teams, df_wage, on="year", how="inner")
 
-    df_result["wage_value_percent"] = df_result.apply(
+    df_teams_wage["wage_value_percent"] = df_teams_wage.apply(
         lambda x: round((x.value_int * 100) / x.wage_value, 2), axis=1
     )
-    
-    df_result = column_value_int(df_result, "wage_value_percent", "wage_value_percent_int")
 
-    df_result.to_csv(
+    df_teams_wage = column_value_int(
+        df_teams_wage, "wage_value_percent", "wage_value_percent_int"
+    )
+
+    # IPCA field
+    df_ipca = pd.read_csv(INPUT_IPCA_FILE)
+
+    df_ipca["ipca_value"] = df_ipca.apply(lambda x: "%.2f" % x.ipca_value, axis=1)
+
+    df_teams_wage_ipca = pd.merge(df_teams_wage, df_ipca, on="year", how="inner")
+
+    df_teams_wage_ipca.to_csv(
         OUTPUT_FILE,
         index=False,
         quoting=QUOTE_ALL,
@@ -114,6 +125,7 @@ if __name__ == "__main__":
             "wage_value",
             "wage_value_percent",
             "wage_value_percent_int",
+            "ipca_value",
             "access_date",
             "source",
         ],
