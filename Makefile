@@ -12,7 +12,7 @@ format:
 gen_data:
 	@rm -rf data/processed/brazil-teams-jersey-price-processed.csv data/processed/minimum_wage_historical.csv
 	@echo "Generating minimum wage historical data..."
-	@python app/minimun_wage/minimum_wage.py
+	@python app/minimum_wage/minimum_wage.py
 	@echo "Generating Processed data..."
 	@python app/data/add_columns_raw_data.py
 

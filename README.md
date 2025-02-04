@@ -24,9 +24,15 @@ encontrar esses preços.
 
 Caso você encontre algum erro, fique à vontade para abrir um PR e contribuir com o projeto.
 
-## Dados Brutos
+## Acesso aos dados
 
-Acesse o csv com dados coletados [clicando aqui](./data/raw).
+Acesse os [dados processados aqui](./data/processed/brazil-teams-jersey-price-processed.csv).
+Todas as informações sobre as colunas podem ser encontradas [aqui](./data/processed/README.md)
+
+Caso queira contribuir com o projeto, deve-se realizar a adição de 
+novos dados no [arquivo de dados brutos](./data/raw/brazil-teams-jersey-price.csv).
+Todas as informações sobre as colunas que devem ser preenchidas podem 
+ser encontradas [aqui](./data/raw/README.md)
 
 ## Dados Disponíveis
 
@@ -67,8 +73,16 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 
 1. Instalar o Python
 2. Instalar a [lib UV](https://docs.astral.sh/uv/)
+3. Instalar o make
 
 ## Informações Adicionais
 
 1. Camisa do Vasco (2013) é relatado que o valor varia entre R$177,00 e R$199,00, 
 dependendo do modelo. No entanto, não foi encontrado nenhuma outra fonte comprovando.
+
+## Como executar os scripts?
+
+1. Utilize o comando `make create_venv` para criar a virtual environment
+2. Ative a venv com o comando `source .venv/bin/activate`
+3. Com a venv ativada, baixe os pacotes usando o comando: `uv sync`
+4. Para testar se a geração está funcionando, basta executar: `make gen_data`
