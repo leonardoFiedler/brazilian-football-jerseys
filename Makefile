@@ -1,7 +1,7 @@
 .PHONY: create_venv upgrade_libs gen_data format clean
 
 create_venv:
-	@uv venv
+	@uv venv .venv
 
 upgrade_libs:
 	@uv sync --upgrade

@@ -41,7 +41,7 @@ for item in items:
 out_file = open(OUTPUT_FILE, "w")
 writer = csv.writer(out_file, quoting=csv.QUOTE_ALL)
 
-writer.writerow(["year", "value"])
+writer.writerow(["year", "wage_value"])
 
 for k, v in y_dict.items():
     writer.writerow([k, float(v)])
