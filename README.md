@@ -32,7 +32,11 @@ Todas as informações sobre as colunas podem ser encontradas [aqui](./data/proc
 Caso queira contribuir com o projeto, deve-se realizar a adição de 
 novos dados no [arquivo de dados brutos](./data/raw/brazil-teams-jersey-price.csv).
 Todas as informações sobre as colunas que devem ser preenchidas podem 
-ser encontradas [aqui](./data/raw/README.md)
+ser encontradas [aqui](./data/raw/README.md).
+
+Caso queira explorar os dados por meio de um notebook, 
+os dados também estão 
+[publicados no Kaggle](https://www.kaggle.com/datasets/leonardofiedler/brazil-teams-jersey-price).
 
 ## Dados Disponíveis
 
