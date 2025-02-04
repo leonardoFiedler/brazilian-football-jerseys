@@ -2,10 +2,12 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 
-# Realiza o download do site IPEADATA
-r = requests.get(
+INPUT_URL = (
     "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028"
 )
+OUTPUT_FILE = "data/processed/minimum_wage_historical.csv"
+
+r = requests.get(INPUT_URL)
 
 soup = BeautifulSoup(r.text, "html.parser")
 
@@ -36,8 +38,8 @@ for item in items:
             y_dict[year] = value_sal
 
 
-out_file = open("salario_minimo_historico.csv", "w")
-writer = csv.writer(out_file, quoting=csv.QUOTE_MINIMAL)
+out_file = open(OUTPUT_FILE, "w")
+writer = csv.writer(out_file, quoting=csv.QUOTE_ALL)
 
 writer.writerow(["year", "value"])
 

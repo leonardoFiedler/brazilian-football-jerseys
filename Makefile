@@ -1,4 +1,4 @@
-.PHONY: create_venv upgrade_libs format analytics clean
+.PHONY: create_venv upgrade_libs gen_data format clean
 
 create_venv:
 	@uv venv
@@ -9,11 +9,13 @@ upgrade_libs:
 format:
 	@ruff format
 
-analytics: ## Start analytics
-	msgfmt -o app/analytics/locales/en/LC_MESSAGES/messages.mo app/analytics/locales/en/LC_MESSAGES/messages && \
-	msgfmt -o app/analytics/locales/pt/LC_MESSAGES/messages.mo app/analytics/locales/pt/LC_MESSAGES/messages && \
-	streamlit run app/analytics/main.py
-	
+gen_data:
+	@rm -rf data/processed/brazil-teams-jersey-price-processed.csv data/processed/minimum_wage_historical.csv
+	@echo "Generating minimum wage historical data..."
+	@python app/minimun_wage/minimum_wage.py
+	@echo "Generating Processed data..."
+	@python app/data/add_columns_raw_data.py
+
 clean: ## Clean venv and generated folders
 	rm -rf .venv target
 

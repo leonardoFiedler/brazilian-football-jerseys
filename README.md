@@ -7,7 +7,8 @@ camisas dos clubes brasileiros. A ideia é coletar informações sobre os preço
 dos principais times do Brasil e analisar sua evolução, contrastando-a com outros aspectos, 
 como o salário mínimo, o momento da equipe e outros indicadores sociais e econômicos.
 
-A análise está focada na versão "Torcedor"/Masculina/Adulta das camisetas oficiais das equipes. 
+A análise inicial está focada na versão "Torcedor"/Masculina/Adulta das camisetas
+oficiais das equipes. 
 Este modelo é o mais próximo da versão usada em campo, porém utiliza um material um pouco mais 
 simples que o das camisas dos jogadores. Versões femininas e infantis costumam ser mais baratas 
 que a versão torcedor masculina. Além disso, esta análise não leva em conta a eventual adição 
@@ -19,13 +20,13 @@ Sendo assim, em alguns casos, os valores correspondem às camisetas número 2 ou
 Todos os valores apresentados possuem uma fonte de referência. Para garantir a precisão dos 
 valores de época, optou-se por buscar notícias do ano de lançamento das camisas. Também 
 foi priorizado o uso dos valores de lançamento das camisetas, mas nem sempre foi possível 
-encontrar notícias contendo esses preços.
+encontrar esses preços.
 
-Caso algum valor esteja incorreto, fique à vontade para abrir um PR e contribuir com o projeto.
+Caso você encontre algum erro, fique à vontade para abrir um PR e contribuir com o projeto.
 
 ## Dados Brutos
 
-Acesse o csv com dados coletados [clicando aqui](./raw/data.csv).
+Acesse o csv com dados coletados [clicando aqui](./data/raw).
 
 ## Dados Disponíveis
 
@@ -50,7 +51,7 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 * São Paulo
 * Santos
 
-### Apenas uma registro
+### Apenas um registro
 
 * Athletico-PR
 * Sport
@@ -62,20 +63,10 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 * Goiás
 * Atlético-GO
 
-## Metadata
-
-| Nome da coluna |   Descrição                          |
-|----------------|--------------------------------------|
-| team           | Nome da equipe                       |
-| year           | Ano de referência do preço           |
-| value          | Valor, em reais, do preço encontrado |
-| access_date    | Data do acesso ao site               |
-| source         |  Site onde o valor foi encontrado    |
-
 ## Pré-requisitos
 
 1. Instalar o Python
-2. Instalar a lib UV
+2. Instalar a [lib UV](https://docs.astral.sh/uv/)
 
 ## Informações Adicionais
 
