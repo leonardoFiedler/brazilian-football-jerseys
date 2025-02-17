@@ -116,6 +116,7 @@ if __name__ == "__main__":
             "year",
             "value",
             "value_int",
+            "supplier",
             "value_add_05",
             "value_add_10",
             "value_add_15",
