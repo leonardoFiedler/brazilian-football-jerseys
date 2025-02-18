@@ -49,13 +49,13 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 * Vasco
 * Corinthians
 * Palmeiras
+* Grêmio
+* Internacional
 
 ### Parcial
 
 * Botafogo
 * Fluminense
-* Grêmio
-* Internacional
 * Atlético-MG
 * Cruzeiro
 * São Paulo
