@@ -9,14 +9,15 @@ Este é o arquivo que deve ser alterado ao adicionar dados de uma nova equipe.
 
 Abaixo, segue a relação dos metadados das colunas coletadas originalmente.
 
-| Nome da coluna |   Descrição                              |
-|----------------|------------------------------------------|
-| team           | Nome da equipe                           |
-| state          | Sigla do estado ao qual o clube pertence |
-| year           | Ano de referência do preço               |
-| value          | Valor, em reais, do preço encontrado     |
-| access_date    | Data do acesso ao site                   |
-| source         | Site onde o valor foi encontrado         |
+| Nome da coluna |   Descrição                                          |
+|----------------|------------------------------------------------------|
+| team           | Nome da equipe                                       |
+| state          | Sigla do estado ao qual o clube pertence             |
+| year           | Ano de referência do preço                           |
+| value          | Valor, em reais, do preço encontrado                 |
+| supplier       | Nome da empresa que fornece o material exportivo     |
+| access_date    | Data do acesso ao site                               |
+| source         | Site onde o valor foi encontrado                     |
 
 
 ## IPCA.csv

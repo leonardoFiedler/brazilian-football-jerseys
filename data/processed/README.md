@@ -16,18 +16,19 @@ Os seguintes dados são disponibilizados:
 | year                   | Ano do registro da camiseta                                                                           |
 | value                  | Valor original encontrado na fonte                                                                    |
 | value_int              | Valor em formato inteiro (sem os centavos), conforme encontrado na fonte                              |
-| value_add_05           |  Valor inteiro com adição de 5%                                                                       |
+| supplier               | Nome da empresa que fornece o material exportivo                                                      |
+| value_add_05           | Valor inteiro com adição de 5%                                                                        |
 | value_add_10           | Valor inteiro com adição de 10%                                                                       |
 | value_add_15           | Valor inteiro com adição de 15%                                                                       |
 | value_sub_05           | Valor inteiro com desconto de 5%                                                                      |
 | value_sub_10           | Valor inteiro com desconto de 10%                                                                     |
 | value_sub_15           | Valor inteiro com desconto de 15%                                                                     |
-| wage_value             |    Valor máximo do salário mínimo no ano do registro                                                  |
-| wage_value_percent     |     Percentual do valor inteiro da camiseta com relação ao salário mínimo (arredondamento de 2 casas) |
-| wage_value_percent_int |    Percentual do valor inteiro da camiseta com relação ao salário mínimo (Inteiro)                    |
+| wage_value             | Valor máximo do salário mínimo no ano do registro                                                     |
+| wage_value_percent     | Percentual do valor inteiro da camiseta com relação ao salário mínimo (arredondamento de 2 casas)     |
+| wage_value_percent_int | Percentual do valor inteiro da camiseta com relação ao salário mínimo (Inteiro)                       |
 | ipca_value             | Valor acumulado anual do IPCA para o ano do registro                                                  |
 | access_date            | Data de acesso a fonte                                                                                |
-| source                 |  Fonte original de onde o dado foi extraído                                                           |
+| source                 | Fonte original de onde o dado foi extraído                                                            |
 
 ## minimum_wage_historical.csv
 
