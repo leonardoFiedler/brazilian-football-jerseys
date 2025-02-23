@@ -83,6 +83,7 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 
 1. Camisa do Vasco (2013) é relatado que o valor varia entre R$177,00 e R$199,00, 
 dependendo do modelo. No entanto, não foi encontrado nenhuma outra fonte comprovando.
+2. Camisa do Cruzeiro (2013) foi encontrado apenas um comentário no site [Camisa de Futebol](https://camisadefutebol.wordpress.com/2013/01/31/nova-camisa-do-cruzeiro-201314/) relatando seu preço de lançamento.
 
 ## Como executar os scripts?
 
