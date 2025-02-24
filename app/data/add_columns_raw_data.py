@@ -73,6 +73,9 @@ if __name__ == "__main__":
 
     df_teams = pd.read_csv(INPUT_FILE)
 
+    # Convert column value to float
+    df_teams["value"] = df_teams["value"].apply(lambda x: float(x))
+
     # Create Int column
     df_teams = column_value_int(df_teams, "value", "value_int")
 
