@@ -51,9 +51,6 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 * Palmeiras
 * Grêmio
 * Internacional
-
-### Parcial
-
 * Botafogo
 * Fluminense
 * Atlético-MG
@@ -61,12 +58,15 @@ Atualmente o dataset contempla 4 clubes de maneira total e 8 de forma parcial.
 * São Paulo
 * Santos
 
+### Parcial
+
+* Fortaleza
+
 ### Apenas um registro
 
 * Athletico-PR
 * Sport
 * Bragantino
-* Fortaleza
 * Coritiba
 * Ceará
 * Bahia
