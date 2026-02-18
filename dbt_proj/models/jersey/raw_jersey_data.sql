@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('raw_data', 'brazil_teams_jersey_price_processed') }}

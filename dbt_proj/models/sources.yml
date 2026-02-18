@@ -1,0 +1,7 @@
+sources:
+  - name: raw_data
+    tables:
+      - name: brazil_teams_jersey_price_processed
+        config:
+          external_location: "read_csv('{{ var('data_path') }}brazil-teams-jersey-price-processed.csv')"
+          formatter: oldstyle
